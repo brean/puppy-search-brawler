@@ -33,10 +33,9 @@ export default class PlayerController {
   private gameSettings: GameSettings;
 
   private changeColors = new Map<string, string>([
-    ['bear', 'BrownDark'],
-    ['duck', 'White'],
-    ['dog', 'Beige'],
-    ['mage', 'PurpleDark']
+    ['mage', 'PurpleDark'],
+    ['hunter', 'Stone'],
+    ['rogue', 'GreenDark']
   ])
   bodyPosition: BABYLON.Vector3 = new BABYLON.Vector3(0, 0, 0);
 

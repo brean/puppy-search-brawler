@@ -186,8 +186,15 @@ export default class LevelLoader extends EventEmitter {
     let mesh
     switch (obj.collider.type) {
       case 'cube':
-        const options = {width: dim[0], height: dim[1], depth: dim[2]}
-        mesh = BABYLON.MeshBuilder.CreateBox("box", options, this.scene);
+        const cubeOptions = {width: dim[0], height: dim[1], depth: dim[2]}
+        mesh = BABYLON.MeshBuilder.CreateBox("box", cubeOptions, this.scene);
+        break;
+      case 'cylinder':
+        const options = {
+          height: obj.collider.height,
+          diameterTop: obj.collider.radius_top * 2,
+          diameterBottom: obj.collider.radius_bottom * 2}
+        mesh = BABYLON.MeshBuilder.CreateCylinder("box", options, this.scene);
         break;
     }
     if (mesh) {
@@ -211,10 +218,18 @@ export default class LevelLoader extends EventEmitter {
         this.mirror.createMirrorMaterial(glass)
         this.levelMeshes.push(glass)
       } else {
-        // we just grab the objects, assuming they are unique
-        const meshes = this.assets.assets.get(obj.name)
+        let meshes;
+        meshes = this.assets.assets.get(obj.name)
+        if (obj.unique !== true && meshes) {
+          for (const mesh of meshes) {
+            // hide original
+            mesh.isVisible = false;
+          }
+          meshes = this.assets.getCopy(obj.name);
+        }
         if (meshes) {
           for (const mesh of meshes) {
+            mesh.isVisible = true;
             this.applyPositionRotation(mesh, obj.pos, obj.rot);
             mesh.receiveShadows = obj.receiveShadows;
             this.shadowGenerator?.addShadowCaster(mesh, true)

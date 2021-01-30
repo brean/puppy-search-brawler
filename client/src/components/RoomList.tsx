@@ -18,7 +18,6 @@ import '@rmwc/typography/styles';
 import AppData from '../model/AppData';
 import RoomMeta from '../model/RoomMeta';
 import { RoomCard } from './RoomCard';
-import { RoomFilter } from './RoomFilter';
 import { GAME_MODES, GAME_MAPS } from '../model/Settings';
 
 type SelectedFilter = {

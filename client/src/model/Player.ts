@@ -4,7 +4,7 @@ class Player extends Schema {
   @type("string") id: string = '';
   @type("string") name: string = 'new Player';
   @type("string") color: string = '#ff0000';
-  @type("string") character: string = 'dog';
+  @type("string") character: string = 'hunter';
   @type("boolean") admin: boolean = false;
   @type("boolean") ready: boolean = false;
   

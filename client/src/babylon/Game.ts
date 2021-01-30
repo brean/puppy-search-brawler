@@ -13,7 +13,7 @@ import AreaInteraction from './AreaInteraction'
 import SettingsMenu from './SettingsMenu'
 import GameSettings from './GameSettings'
 
-const CHARACTER_MODELS = ['mage', 'bear', 'dog', 'duck']
+const CHARACTER_MODELS = ['mage', 'hunter', 'rogue']
 
 class Game {
   private gameSettings: GameSettings = new GameSettings();

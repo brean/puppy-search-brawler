@@ -7,7 +7,7 @@ import StateHandler from "../entities/StateHandler";
 import * as fs from 'fs';
 import { hexToHsl, getRandomColor, hslToHex } from '../colors';
 
-const CHARACTER_MODELS = ['mage', 'dog', 'duck', 'bear']
+const CHARACTER_MODELS = ['mage', 'hunter', 'rogue']
 
 function getRandomCharacter():string {
   return CHARACTER_MODELS[Math.floor(Math.random()*3)]
@@ -88,7 +88,6 @@ export default class GameRoom extends Room {
   private setupPhysics() {
     this.world.gravity.set(0, -9.82, 0); // m/s²
     this.loadLevel('lobby')
-    // todo: reset all player (?)
   }
 
   private loadLevel(level: string) {
@@ -107,6 +106,9 @@ export default class GameRoom extends Room {
         let cont = false;
         if (mapData.areas) {
           for (const area of mapData.areas) {
+            if (!area.pos) {
+              console.log(area);
+            }
             if ((i === area.pos[0]) && (j === area.pos[2])) {
               cont = true;
               break;
@@ -312,10 +314,6 @@ export default class GameRoom extends Room {
         if (!area) {
           return;
         }
-        playerData.ready = area.type === 'start';
-        if (playerData.ready) {
-          this.checkAllPlayerReady()
-        }
       }
     })
     this.resetPlayerPhysics(playerBody, playerData)
@@ -325,25 +323,6 @@ export default class GameRoom extends Room {
     // Note that all player in the game will be given the sessionId of each other.
     this.firstUser = false;
     this.state.players[playerData.id] = playerData
-  }
-
-  checkAllPlayerReady() {
-    const players: MapSchema<Player> = this.state.players
-    let allReady = true;
-    let numPlayer = 0;
-    players.forEach((player) => {
-      numPlayer++
-      if (!player.ready) {
-        allReady = false;
-      }
-    })
-    if (numPlayer < 2) {
-      allReady = false;
-    }
-    if (allReady) {
-      this.resetWorld()
-      this.loadLevel('fields')
-    }
   }
 
   // When a client leaves the room

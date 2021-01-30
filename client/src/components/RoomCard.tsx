@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { GridCell } from '@rmwc/grid';
 import { Card, CardMedia, CardPrimaryAction } from '@rmwc/card';
-import { Chip, ChipSet } from '@rmwc/chip';
 import { Typography } from '@rmwc/typography';
 import { History } from "history";
 import { Client, RoomAvailable } from 'colyseus.js';
