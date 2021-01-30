@@ -43,10 +43,6 @@ class RoomCard extends Component<{room: RoomAvailable<RoomMeta>, client: Client,
               >
                 { room.clients }/{ room.maxClients || '∞' } player
               </Typography>
-              <ChipSet>
-                <Chip>{ roomMeta?.mode }</Chip>
-                <Chip>{ roomMeta?.map }</Chip>
-              </ChipSet>
             </div>
           </CardPrimaryAction>
         </Card>

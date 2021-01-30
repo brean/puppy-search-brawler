@@ -89,23 +89,13 @@ class RoomList extends Component<{ appData: AppData }, SelectedFilter> {
         <TopAppBar>
           <TopAppBarRow>
             <TopAppBarSection>
-              <TopAppBarTitle>Rooms</TopAppBarTitle>
+              <TopAppBarTitle>Games</TopAppBarTitle>
             </TopAppBarSection>
             <TopAppBarSection alignEnd>
             </TopAppBarSection>
           </TopAppBarRow>
         </TopAppBar>
         <TopAppBarFixedAdjust />
-        
-        <Grid>
-          <GridCell span={12}>
-            <RoomFilter
-              gameModes={this.state.gameModes}
-              gameMaps={this.state.gameMaps}
-              toggleMap={this.toggle(this.state.gameMaps).bind(this)}
-              toggleMode={this.toggle(this.state.gameModes).bind(this)} />
-          </GridCell>
-        </Grid>
         
         <Grid>
           {rows}
@@ -132,7 +122,7 @@ class RoomList extends Component<{ appData: AppData }, SelectedFilter> {
                     tag="div"
                     theme="textSecondaryOnBackground"
                   >
-                  Touch/Click here to create a new Game lobby.
+                  Touch/Click here to create a new game lobby.
                   </Typography>
                 </div>
               </CardPrimaryAction>

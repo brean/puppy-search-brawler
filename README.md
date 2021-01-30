@@ -1,32 +1,14 @@
-# colyseus lobby for babylon
+# Puppy Search Brawler
 
-A babylon.js/WebGL frontent for rendering a lobby using colyseus.io for multiplayer network.
+Global Game Jam Game 2021
 
-[![Build Status](https://travis-ci.com/brean/colyseus-lobby-babylon.svg?branch=main)](https://travis-ci.com/brean/colyseus-lobby-babylon)
-[![Coverage Status](https://coveralls.io/repos/github/brean/colyseus-lobby-babylon/badge.svg?branch=main)](https://coveralls.io/github/brean/colyseus-lobby-babylon?branch=main)
-![MIT License](https://img.shields.io/github/license/brean/colyseus-lobby-babylon)
+[![Build Status](https://travis-ci.com/brean/puppy-search-brawler.svg?branch=main)](https://travis-ci.com/brean/puppy-search-brawler)
+[![Coverage Status](https://coveralls.io/repos/github/brean/puppy-search-brawler/badge.svg?branch=main)](https://coveralls.io/github/brean/puppy-search-brawler?branch=main)
+![MIT License](https://img.shields.io/github/license/brean/puppy-search-brawler)
 
-## Features
+## Technical
 
-- Suport for mobile (touchscreen), Mouse&Keyboard as well as gamepads.
-  - allowing local splitscreen by running multiple browser windows and (de)activating controller.
-- Individual controller configuration and configuration of different sounds.
-
-![config dialog](docs/controller_and_sound.png)
-
-- Color selection
-
-![](docs/color_select.png)
-
-- Character selection
-
-![](docs/character_select.png)
-
-- A big start button to start your game
-
-![](docs/start.png)
-
-(Note that this is only the lobby, it does NOT implement a full game, take a look at my Global Game Jam 2021 game [Puppy Search Brawl](https://github.com/brean/puppy-search-brawl) )
+Build ontop of colyseus-lobby-babylon
 
 ## Assets
 
