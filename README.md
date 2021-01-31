@@ -11,11 +11,13 @@ Global Game Jam Game 2021
 
 ## Technical
 
-Build ontop of colyseus-lobby-babylon
+Build ontop of [colyseus-lobby-babylon](https://github.com/brean/colyseus-lobby-babylon)
 
-## Assets
+## Licensing
 
-Using the cute 3D Assets by Kay Lousberg (www.kaylousberg.com)
+Using the cute 3D Assets by Kay Lousberg [kaylousberg.com](https://www.kaylousberg.com)
 
-License: (Creative Commons Zero, CC0)
-http://creativecommons.org/publicdomain/zero/1.0/
+All assets are licensed using: [Creative Commons Zero, CC0](http://creativecommons.org/publicdomain/zero/1.0/)
+
+The source code is licensed using: [MIT](https://github.com/brean/puppy-search-brawler/blob/main/LICENSE)
+
