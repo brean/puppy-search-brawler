@@ -9,7 +9,8 @@ Global Game Jam Game 2021
 ![MIT License](https://img.shields.io/github/license/brean/puppy-search-brawler)
 
 ## Story
-![](client/public/story/story_overview.png)
+
+![Story overview](client/public/story/story_overview.png)
 
 ## Technical
 
@@ -22,4 +23,3 @@ Using the cute 3D Assets by Kay Lousberg [kaylousberg.com](https://www.kaylousbe
 All assets are licensed using: [Creative Commons Zero, CC0](http://creativecommons.org/publicdomain/zero/1.0/)
 
 The source code is licensed using: [MIT](https://github.com/brean/puppy-search-brawler/blob/main/LICENSE)
-
