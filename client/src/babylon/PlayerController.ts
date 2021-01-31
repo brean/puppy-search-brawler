@@ -124,6 +124,14 @@ export default class PlayerController {
     this.onPlayerChange.notifyObservers(this.playerModel);
   }
 
+  public playWilhelm() {
+    if (this.wilhelm.isPlaying) {
+      return;
+    }
+    this.wilhelm.setVolume(this.gameSettings.wilhelmVolume)
+    this.wilhelm.play();
+  }
+
   public updateMeshPosition() {
     const playerModel: Player = this._playerModel;
     if (!this.meshes) {
@@ -138,10 +146,8 @@ export default class PlayerController {
     const basePos = this.meshes[0].position;
     if (this.bodyMesh) {
       this.bodyMesh.position = basePos.add(this.bodyPosition)
-      if (this.bodyMesh.position.y < -1
-        && !this.wilhelm.isPlaying) {
-        this.wilhelm.setVolume(this.gameSettings.wilhelmVolume)
-        this.wilhelm.play();
+      if (this.bodyMesh.position.y < -1) {
+        this.playWilhelm()
       }
     }
     if (this._controllable) {

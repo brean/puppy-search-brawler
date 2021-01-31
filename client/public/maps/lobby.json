@@ -1157,15 +1157,29 @@
       ]
     },
     {
+      "name": "detail_forest",
+      "pos": [
+        46,
+        0,
+        6
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.95518312513766,
+        0
+      ]
+    },
+    {
       "name": "treeA_graveyard",
       "pos": [
-        41,
+        57,
         0,
-        0
+        23
       ],
       "rot": [
         0,
-        -3.550106894697126,
+        -3.7723868674499865,
         0
       ],
       "receiveShadows": false,
@@ -1174,7 +1188,59 @@
         "radius_top": 0.2,
         "radius_bottom": 0.3,
         "height": 3,
-        "segments": 16,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        18,
+        0,
+        2
+      ],
+      "rot": [
+        0,
+        -3.8338372462180317,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        36,
+        0,
+        41
+      ],
+      "rot": [
+        0,
+        -5.446049863406648,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
         "pos": [
           0,
           1.5,
@@ -1185,370 +1251,11 @@
     {
       "name": "tree_forest",
       "pos": [
-        49,
-        0,
-        18
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        56,
-        0,
-        8
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.069379511157952,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        53,
-        0,
-        15
-      ],
-      "rot": [
-        0,
-        -6.143857921967869,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        20,
-        0,
-        -8
-      ],
-      "rot": [
-        0,
-        -3.158429412236766,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        26,
-        0,
-        -1
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.7900643646469176,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
         16,
-        0,
-        24
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.611967547996294,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        14,
-        0,
-        -7
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.577557630744174,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        65,
-        0,
-        -1
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.4254996728381943,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        41,
-        0,
-        21
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.604810503633046,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        40,
-        0,
-        0
-      ],
-      "rot": [
-        0,
-        -3.5599827446966,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        15,
-        0,
-        35
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.151845965960213,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        30,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.186431375245082,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        34,
-        0,
-        39
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.74304157055612,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        17,
-        0,
-        33
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.64477762684822,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        16,
-        0,
-        11
-      ],
-      "rot": [
-        0,
-        -5.963923473281636,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        55,
-        0,
-        16
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.514835626167211,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        23,
-        0,
-        24
-      ],
-      "rot": [
-        0,
-        -4.312331187929082,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        49,
         0,
         36
       ],
       "receiveShadows": false,
-      "rot": [
-        0,
-        -4.135314217062479,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        46,
-        0,
-        23
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.3849225810573875,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        58,
-        0,
-        5
-      ],
-      "rot": [
-        0,
-        -5.145452680764449,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        54,
-        0,
-        42
-      ],
-      "receiveShadows": false,
       "collider": {
         "type": "cylinder",
         "radius_top": 0.4,
@@ -1561,120 +1268,73 @@
           0
         ]
       }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        50,
-        0,
-        42
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.9117358965896925,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        39,
-        0,
-        23
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.7109066635659107,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        46,
-        0,
-        -10
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        39,
-        0,
-        28
-      ],
-      "rot": [
-        0,
-        -3.7064204221672403,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        50,
-        0,
-        -11
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.515168615777231,
-        0
-      ]
     },
     {
       "name": "detail_forest",
       "pos": [
         38,
         0,
-        8
+        37
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -4.659649847126673,
+        -4.577128580694657,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        40,
+        0,
+        3
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.028791957726787,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        20,
+        0,
+        -2
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.595318404370599,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        30,
+        0,
+        38
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.754298085550384,
         0
       ]
     },
     {
       "name": "treeA_graveyard",
       "pos": [
-        28,
+        15,
         0,
-        21
+        22
       ],
       "rot": [
         0,
-        -3.7270685879047063,
+        -5.996523744931679,
         0
       ],
       "receiveShadows": false,
@@ -1683,7 +1343,33 @@
         "radius_top": 0.2,
         "radius_bottom": 0.3,
         "height": 3,
-        "segments": 16,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        13,
+        0,
+        4
+      ],
+      "rot": [
+        0,
+        -4.678155469738846,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
         "pos": [
           0,
           1.5,
@@ -1694,9 +1380,9 @@
     {
       "name": "tree_forest",
       "pos": [
-        53,
+        24,
         0,
-        15
+        22
       ],
       "receiveShadows": false,
       "collider": {
@@ -1715,9 +1401,9 @@
     {
       "name": "tree_forest",
       "pos": [
-        34,
+        32,
         0,
-        7
+        -5
       ],
       "receiveShadows": false,
       "collider": {
@@ -1736,9 +1422,9 @@
     {
       "name": "tree_forest",
       "pos": [
-        46,
+        31,
         0,
-        -7
+        31
       ],
       "receiveShadows": false,
       "collider": {
@@ -1747,6 +1433,32 @@
         "radius_bottom": 0.9,
         "height": 3,
         "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        57,
+        0,
+        8
+      ],
+      "rot": [
+        0,
+        -5.1167180626461874,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
         "pos": [
           0,
           1.5,
@@ -1757,190 +1469,63 @@
     {
       "name": "detail_forest",
       "pos": [
-        63,
+        20,
+        0,
+        27
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.284661060368663,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        53,
+        0,
+        40
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.19874994901197,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        17,
+        0,
+        38
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.7779215950700737,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        40,
         0,
         37
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -5.253701577180689,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        31,
-        0,
-        9
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.2684261473912075,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        14,
-        0,
-        26
-      ],
-      "rot": [
-        0,
-        -6.28025365319867,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        49,
-        0,
-        30
-      ],
-      "rot": [
-        0,
-        -4.105865541300304,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        58,
-        0,
-        41
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.29734932733842,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        29,
-        0,
-        12
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.367866674380624,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        58,
-        0,
-        11
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.323758554135591,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        14,
-        0,
-        40
-      ],
-      "rot": [
-        0,
-        -3.898943740262472,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        24,
-        0,
-        14
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        37,
-        0,
-        28
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.752847712296362,
+        -5.392198084496954,
         0
       ]
     },
     {
       "name": "tree_forest",
       "pos": [
-        24,
+        22,
         0,
         -4
       ],
@@ -1959,215 +1544,25 @@
       }
     },
     {
-      "name": "detail_forest",
-      "pos": [
-        60,
-        0,
-        37
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.179031424915893,
-        0
-      ]
-    },
-    {
       "name": "grass",
       "pos": [
-        54,
+        52,
         0,
-        -2
+        14
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -3.7021651288080575,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        44,
-        0,
-        -7
-      ],
-      "rot": [
-        0,
-        -5.3874851927332905,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        38,
-        0,
-        -3
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.410828622140762,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        18,
-        0,
-        3
-      ],
-      "rot": [
-        0,
-        -3.8313612470601326,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        38,
-        0,
-        -9
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        16,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.153801732064111,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        20,
-        0,
-        -11
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -6.060493758133867,
+        -5.844484414080667,
         0
       ]
     },
     {
       "name": "tree_forest",
       "pos": [
-        13,
+        17,
         0,
-        22
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        40,
-        0,
-        35
-      ],
-      "rot": [
-        0,
-        -5.9404057536222075,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        42,
-        0,
-        3
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.458778918793244,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        28,
-        0,
-        38
+        40
       ],
       "receiveShadows": false,
       "collider": {
@@ -2188,317 +1583,36 @@
       "pos": [
         63,
         0,
-        6
+        2
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -3.9657326139426834,
+        -4.313157192541698,
         0
       ]
     },
     {
-      "name": "treeA_graveyard",
-      "pos": [
-        13,
-        0,
-        3
-      ],
-      "rot": [
-        0,
-        -6.255700500189682,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
       "name": "detail_forest",
       "pos": [
-        16,
+        51,
         0,
-        11
+        23
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -4.7308408919297325,
+        -5.903563465748476,
         0
       ]
     },
     {
       "name": "tree_forest",
       "pos": [
-        28,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        34,
-        0,
-        25
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.414332369021339,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        14,
-        0,
-        25
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.413299118876916,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        54,
-        0,
-        42
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -6.163791299638249,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        26,
-        0,
-        16
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.838061924433501,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        20,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.7068246948542876,
-        0
-      ]
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        44,
-        0,
-        -9
-      ],
-      "rot": [
-        0,
-        -4.2330469767151016,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "grass",
-      "pos": [
-        60,
-        0,
-        32
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.553992275222777,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        14,
-        0,
-        26
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.145333065547205,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        19,
-        0,
-        7
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.537902441894529,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        44,
-        0,
-        12
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -6.248562539568146,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        66,
-        0,
-        -1
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.83275554074451,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        26,
-        0,
-        36
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        39,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        58,
+        18,
         0,
         14
       ],
-      "rot": [
-        0,
-        -4.711117157444327,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        52,
-        0,
-        21
-      ],
       "receiveShadows": false,
       "collider": {
         "type": "cylinder",
@@ -2516,13 +1630,13 @@
     {
       "name": "treeA_graveyard",
       "pos": [
-        33,
+        15,
         0,
-        6
+        -1
       ],
       "rot": [
         0,
-        -4.036672678761219,
+        -3.177070490322416,
         0
       ],
       "receiveShadows": false,
@@ -2531,77 +1645,7 @@
         "radius_top": 0.2,
         "radius_bottom": 0.3,
         "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        46,
-        0,
-        27
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.955259708779422,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        23,
-        0,
-        27
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.908187749827225,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        18,
-        0,
-        -2
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        18,
-        0,
-        29
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
+        "segments": 12,
         "pos": [
           0,
           1.5,
@@ -2612,187 +1656,98 @@
     {
       "name": "grass",
       "pos": [
-        39,
+        28,
         0,
-        19
+        39
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -4.788020019274262,
+        -4.3307343647632734,
         0
       ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        26,
-        0,
-        34
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.2686656873045195,
-        0
-      ]
-    },
-    {
-      "name": "grass",
-      "pos": [
-        54,
-        0,
-        28
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -6.198324577371827,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        48,
-        0,
-        -8
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.45602908394807,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        27,
-        0,
-        -10
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.5146533850524326,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        60,
-        0,
-        41
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        14,
-        0,
-        37
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -4.092810797076585,
-        0
-      ]
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        50,
-        0,
-        32
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        50,
-        0,
-        8
-      ],
-      "rot": [
-        0,
-        -4.436755097855989,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        49,
-        0,
-        -6
-      ],
-      "rot": [
-        0,
-        -5.161656844064007,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
     },
     {
       "name": "tree_forest",
       "pos": [
         32,
         0,
-        24
+        -9
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        38,
+        0,
+        21
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.330716317435022,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        50,
+        0,
+        -8
+      ],
+      "rot": [
+        0,
+        -5.280323574705772,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        48,
+        0,
+        31
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.968109215274329,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        61,
+        0,
+        7
       ],
       "receiveShadows": false,
       "collider": {
@@ -2811,13 +1766,13 @@
     {
       "name": "treeA_graveyard",
       "pos": [
-        49,
+        45,
         0,
-        -5
+        19
       ],
       "rot": [
         0,
-        -6.066335130709252,
+        -3.561524269032048,
         0
       ],
       "receiveShadows": false,
@@ -2825,6 +1780,27 @@
         "type": "cylinder",
         "radius_top": 0.2,
         "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        17,
+        0,
+        -3
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
         "height": 3,
         "segments": 16,
         "pos": [
@@ -2837,37 +1813,23 @@
     {
       "name": "grass",
       "pos": [
-        21,
+        34,
         0,
-        4
+        6
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -4.160707583011335,
-        0
-      ]
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        28,
-        0,
-        16
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -5.09311475870483,
+        -3.5481959037613224,
         0
       ]
     },
     {
       "name": "tree_forest",
       "pos": [
-        59,
+        18,
         0,
-        30
+        -3
       ],
       "receiveShadows": false,
       "collider": {
@@ -2884,13 +1846,83 @@
       }
     },
     {
-      "name": "tree_forest",
+      "name": "detail_forest",
       "pos": [
-        12,
+        40,
         0,
         39
       ],
       "receiveShadows": false,
+      "rot": [
+        0,
+        -4.895813175826484,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        44,
+        0,
+        21
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.2974389831287425,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        44,
+        0,
+        39
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.609791626470958,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        60,
+        0,
+        35
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.918652055715131,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        62,
+        0,
+        -10
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.6083459567440865,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        21,
+        0,
+        25
+      ],
+      "receiveShadows": false,
       "collider": {
         "type": "cylinder",
         "radius_top": 0.4,
@@ -2903,46 +1935,11 @@
           0
         ]
       }
-    },
-    {
-      "name": "detail_forest",
-      "pos": [
-        20,
-        0,
-        36
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.406910700082301,
-        0
-      ]
     },
     {
       "name": "tree_forest",
       "pos": [
         23,
-        0,
-        4
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.4,
-        "radius_bottom": 0.9,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "tree_forest",
-      "pos": [
-        27,
         0,
         35
       ],
@@ -2961,91 +1958,77 @@
       }
     },
     {
-      "name": "treeA_graveyard",
-      "pos": [
-        61,
-        0,
-        29
-      ],
-      "rot": [
-        0,
-        -5.353703934560311,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
-      "name": "treeA_graveyard",
-      "pos": [
-        23,
-        0,
-        13
-      ],
-      "rot": [
-        0,
-        -4.842539568761297,
-        0
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cylinder",
-        "radius_top": 0.2,
-        "radius_bottom": 0.3,
-        "height": 3,
-        "segments": 16,
-        "pos": [
-          0,
-          1.5,
-          0
-        ]
-      }
-    },
-    {
       "name": "detail_forest",
       "pos": [
-        25,
+        37,
         0,
-        10
+        25
       ],
       "receiveShadows": false,
       "rot": [
         0,
-        -4.805495395495354,
+        -4.697077169011688,
         0
       ]
     },
     {
-      "name": "grass",
+      "name": "treeA_graveyard",
       "pos": [
-        12,
+        21,
+        0,
+        41
+      ],
+      "rot": [
+        0,
+        -3.8293485893946393,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        22,
         0,
         19
       ],
-      "receiveShadows": false,
       "rot": [
         0,
-        -6.092332925523532,
+        -3.4983891699283722,
         0
-      ]
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
     },
     {
       "name": "tree_forest",
       "pos": [
-        18,
+        35,
         0,
-        -12
+        18
       ],
       "receiveShadows": false,
       "collider": {
@@ -3066,11 +2049,11 @@
       "pos": [
         38,
         0,
-        -8
+        42
       ],
       "rot": [
         0,
-        -3.145748888920046,
+        -4.548664354811384,
         0
       ],
       "receiveShadows": false,
@@ -3079,7 +2062,7 @@
         "radius_top": 0.2,
         "radius_bottom": 0.3,
         "height": 3,
-        "segments": 16,
+        "segments": 12,
         "pos": [
           0,
           1.5,
@@ -3088,25 +2071,11 @@
       }
     },
     {
-      "name": "detail_forest",
-      "pos": [
-        14,
-        0,
-        21
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0,
-        -3.6564824999861387,
-        0
-      ]
-    },
-    {
       "name": "tree_forest",
       "pos": [
-        17,
+        49,
         0,
-        27
+        -12
       ],
       "receiveShadows": false,
       "collider": {
@@ -3125,13 +2094,13 @@
     {
       "name": "treeA_graveyard",
       "pos": [
-        65,
+        60,
         0,
-        24
+        41
       ],
       "rot": [
         0,
-        -5.774882406514482,
+        -4.233411093066827,
         0
       ],
       "receiveShadows": false,
@@ -3139,6 +2108,109 @@
         "type": "cylinder",
         "radius_top": 0.2,
         "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        64,
+        0,
+        0
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.4667075650667005,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        61,
+        0,
+        -1
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.8762619550395656,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        28,
+        0,
+        3
+      ],
+      "rot": [
+        0,
+        -3.6283774496377923,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        65,
+        0,
+        0
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.8570203942539,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        17,
+        0,
+        40
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.666646857017611,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        43,
+        0,
+        28
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
         "height": 3,
         "segments": 16,
         "pos": [
@@ -3149,11 +2221,161 @@
       }
     },
     {
+      "name": "detail_forest",
+      "pos": [
+        37,
+        0,
+        -4
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.6959080624398806,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        17,
+        0,
+        -2
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.716859257072531,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        39,
+        0,
+        32
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.720120884418842,
+        0
+      ]
+    },
+    {
       "name": "tree_forest",
       "pos": [
-        23,
+        62,
         0,
-        26
+        31
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        20,
+        0,
+        14
+      ],
+      "rot": [
+        0,
+        -5.268322192728956,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        56,
+        0,
+        6
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.685225462467728,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        19,
+        0,
+        40
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        18,
+        0,
+        18
+      ],
+      "rot": [
+        0,
+        -3.940074264939276,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        48,
+        0,
+        29
       ],
       "receiveShadows": false,
       "collider": {
@@ -3172,9 +2394,126 @@
     {
       "name": "tree_forest",
       "pos": [
-        49,
+        41,
         0,
+        12
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        34,
+        0,
+        -11
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.051586715522021,
         0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        22,
+        0,
+        36
+      ],
+      "rot": [
+        0,
+        -6.161592766873357,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        50,
+        0,
+        41
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.150772079711052,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        34,
+        0,
+        1
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        66,
+        0,
+        23
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        36,
+        0,
+        32
       ],
       "receiveShadows": false,
       "collider": {
@@ -3195,7 +2534,7 @@
       "pos": [
         58,
         0,
-        22
+        14
       ],
       "receiveShadows": false,
       "collider": {
@@ -3212,11 +2551,665 @@
       }
     },
     {
+      "name": "tree_forest",
+      "pos": [
+        31,
+        0,
+        2
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        49,
+        0,
+        35
+      ],
+      "rot": [
+        0,
+        -4.597933417999376,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        59,
+        0,
+        11
+      ],
+      "rot": [
+        0,
+        -5.363410276865924,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        36,
+        0,
+        12
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -6.077905248635815,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        45,
+        0,
+        11
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        34,
+        0,
+        5
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.204618134925008,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        36,
+        0,
+        30
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.7575600703693315,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        14,
+        0,
+        31
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        57,
+        0,
+        6
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.5712417885304077,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        47,
+        0,
+        -2
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.550839214952062,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        20,
+        0,
+        26
+      ],
+      "rot": [
+        0,
+        -5.434274179871619,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        27,
+        0,
+        34
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -6.070169932147061,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        35,
+        0,
+        0
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.91673145144579,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        61,
+        0,
+        -8
+      ],
+      "rot": [
+        0,
+        -4.8140505856830496,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        30,
+        0,
+        13
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.5703549114217563,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        22,
+        0,
+        -3
+      ],
+      "rot": [
+        0,
+        -6.172215153463161,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        64,
+        0,
+        41
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.2326594939447055,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        30,
+        0,
+        25
+      ],
+      "rot": [
+        0,
+        -5.930828217968939,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        40,
+        0,
+        24
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.3123347194613846,
+        0
+      ]
+    },
+    {
+      "name": "tree_forest",
+      "pos": [
+        56,
+        0,
+        23
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.9,
+        "height": 3,
+        "segments": 16,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        24,
+        0,
+        42
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.327573566048727,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        59,
+        0,
+        4
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.5075072300154724,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        57,
+        0,
+        32
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -6.101326597676925,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        42,
+        0,
+        37
+      ],
+      "rot": [
+        0,
+        -4.771910340554564,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        45,
+        0,
+        6
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -6.19874394217975,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        26,
+        0,
+        26
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.525826594736816,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        42,
+        0,
+        42
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.620342572357221,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        18,
+        0,
+        1
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.985354857130736,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        66,
+        0,
+        24
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -5.244989960648038,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        42,
+        0,
+        37
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -6.243914313890806,
+        0
+      ]
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        52,
+        0,
+        9
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.407773954671641,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        19,
+        0,
+        -6
+      ],
+      "rot": [
+        0,
+        -3.878628123228288,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "grass",
+      "pos": [
+        55,
+        0,
+        -6
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.765213595332003,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        24,
+        0,
+        38
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.572033553190853,
+        0
+      ]
+    },
+    {
+      "name": "grass",
+      "pos": [
+        54,
+        0,
+        40
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -4.0014045297506895,
+        0
+      ]
+    },
+    {
+      "name": "treeA_graveyard",
+      "pos": [
+        44,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -4.387552074731394,
+        0
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.2,
+        "radius_bottom": 0.3,
+        "height": 3,
+        "segments": 12,
+        "pos": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "detail_forest",
+      "pos": [
+        15,
+        0,
+        19
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0,
+        -3.8290772361496983,
+        0
+      ]
+    },
+    {
       "name": "spikes",
       "pos": [
-        50,
+        12,
         1.5,
-        41
+        22
       ],
       "receiveShadows": false,
       "collider": {
@@ -3236,9 +3229,97 @@
     {
       "name": "spikes",
       "pos": [
-        22,
+        14,
         1.5,
-        -3
+        4
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cube",
+        "dim": [
+          3.4,
+          1.5,
+          3.4
+        ],
+        "pos": [
+          0,
+          -0.75,
+          0
+        ]
+      }
+    },
+    {
+      "name": "spikes",
+      "pos": [
+        62,
+        1.5,
+        36
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cube",
+        "dim": [
+          3.4,
+          1.5,
+          3.4
+        ],
+        "pos": [
+          0,
+          -0.75,
+          0
+        ]
+      }
+    },
+    {
+      "name": "spikes",
+      "pos": [
+        40,
+        1.5,
+        35
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cube",
+        "dim": [
+          3.4,
+          1.5,
+          3.4
+        ],
+        "pos": [
+          0,
+          -0.75,
+          0
+        ]
+      }
+    },
+    {
+      "name": "spikes",
+      "pos": [
+        58,
+        1.5,
+        -11
+      ],
+      "receiveShadows": false,
+      "collider": {
+        "type": "cube",
+        "dim": [
+          3.4,
+          1.5,
+          3.4
+        ],
+        "pos": [
+          0,
+          -0.75,
+          0
+        ]
+      }
+    },
+    {
+      "name": "spikes",
+      "pos": [
+        54,
+        1.5,
+        24
       ],
       "receiveShadows": false,
       "collider": {
@@ -3260,7 +3341,7 @@
       "pos": [
         55,
         1.5,
-        7
+        9
       ],
       "receiveShadows": false,
       "collider": {
@@ -3280,9 +3361,9 @@
     {
       "name": "spikes",
       "pos": [
-        13,
+        33,
         1.5,
-        -12
+        2
       ],
       "receiveShadows": false,
       "collider": {
@@ -3302,9 +3383,9 @@
     {
       "name": "spikes",
       "pos": [
-        48,
+        16,
         1.5,
-        -5
+        17
       ],
       "receiveShadows": false,
       "collider": {
@@ -3324,97 +3405,9 @@
     {
       "name": "spikes",
       "pos": [
-        15,
+        66,
         1.5,
-        37
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cube",
-        "dim": [
-          3.4,
-          1.5,
-          3.4
-        ],
-        "pos": [
-          0,
-          -0.75,
-          0
-        ]
-      }
-    },
-    {
-      "name": "spikes",
-      "pos": [
-        35,
-        1.5,
-        38
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cube",
-        "dim": [
-          3.4,
-          1.5,
-          3.4
-        ],
-        "pos": [
-          0,
-          -0.75,
-          0
-        ]
-      }
-    },
-    {
-      "name": "spikes",
-      "pos": [
-        23,
-        1.5,
-        36
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cube",
-        "dim": [
-          3.4,
-          1.5,
-          3.4
-        ],
-        "pos": [
-          0,
-          -0.75,
-          0
-        ]
-      }
-    },
-    {
-      "name": "spikes",
-      "pos": [
-        30,
-        1.5,
-        34
-      ],
-      "receiveShadows": false,
-      "collider": {
-        "type": "cube",
-        "dim": [
-          3.4,
-          1.5,
-          3.4
-        ],
-        "pos": [
-          0,
-          -0.75,
-          0
-        ]
-      }
-    },
-    {
-      "name": "spikes",
-      "pos": [
-        23,
-        1.5,
-        26
+        25
       ],
       "receiveShadows": false,
       "collider": {
@@ -3434,100 +3427,184 @@
     {
       "name": "dog",
       "pos": [
-        47,
+        48,
         0,
-        25
+        -6
       ],
       "receiveShadows": false,
       "rot": [
         0.0,
-        -4.533159950760191,
+        -3.547205421961201,
         0.0
-      ]
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "dog",
+      "pos": [
+        60,
+        0,
+        1
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0.0,
+        -3.92844809610007,
+        0.0
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "dog",
+      "pos": [
+        16,
+        0,
+        34
+      ],
+      "receiveShadows": false,
+      "rot": [
+        0.0,
+        -4.4205424669691595,
+        0.0
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
     },
     {
       "name": "dog",
       "pos": [
         38,
         0,
-        -3
+        9
       ],
       "receiveShadows": false,
       "rot": [
         0.0,
-        -6.012957883307311,
+        -5.611754428099996,
         0.0
-      ]
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
     },
     {
       "name": "dog",
       "pos": [
-        20,
+        18,
         0,
-        33
+        25
       ],
       "receiveShadows": false,
       "rot": [
         0.0,
-        -5.711191877076646,
+        -4.18099856286156,
         0.0
-      ]
-    },
-    {
-      "name": "dog",
-      "pos": [
-        30,
-        0,
-        40
       ],
-      "receiveShadows": false,
-      "rot": [
-        0.0,
-        -3.1883309137837252,
-        0.0
-      ]
-    },
-    {
-      "name": "dog",
-      "pos": [
-        30,
-        0,
-        -12
-      ],
-      "receiveShadows": false,
-      "rot": [
-        0.0,
-        -3.6210069380451984,
-        0.0
-      ]
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
     },
     {
       "name": "dog",
       "pos": [
         53,
         0,
-        19
+        22
       ],
       "receiveShadows": false,
       "rot": [
         0.0,
-        -3.8688389509909076,
+        -5.991207526222919,
         0.0
-      ]
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
     },
     {
       "name": "dog",
       "pos": [
-        26,
+        56,
         0,
-        36
+        -12
       ],
       "receiveShadows": false,
       "rot": [
         0.0,
-        -5.86147758947508,
+        -3.5557937649651548,
         0.0
-      ]
+      ],
+      "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [
+          -0.3,
+          0,
+          0
+        ]
+      }
     }
   ]
 }

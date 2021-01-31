@@ -12,6 +12,8 @@ import { UIManager } from './UIManager'
 import AreaInteraction from './AreaInteraction'
 import SettingsMenu from './SettingsMenu'
 import GameSettings from './GameSettings'
+import StateBar from './StateBar'
+import WonLostText from './WonLostText'
 
 const CHARACTER_MODELS = ['mage', 'hunter', 'rogue']
 
@@ -24,6 +26,7 @@ class Game {
   private playerId: string = 'NotYou'
   private light?: BABYLON.DirectionalLight
   private room: Room
+  private wonLostText: WonLostText
   private players:Map<string, PlayerController> = new Map<string, PlayerController>()
   private controls: InputControls
   private areaInteraction: AreaInteraction;
@@ -36,6 +39,7 @@ class Game {
   private cameraPosition: BABYLON.Vector3 = new BABYLON.Vector3(12, 12, 0)
   private ui: UIManager
   private _level: string
+  private stateBar: StateBar
 
   constructor (room: Room, level = 'lobby') {
     this._level = level;
@@ -58,6 +62,7 @@ class Game {
     this.mirror = new MirrorStorage(this.scene);
     this.createLight();
     this.ui = new UIManager(this.canvas);
+    this.wonLostText = new WonLostText(this.ui)
     this.controls = new InputControls(
       this.room, this.engine,
       this.scene, this.ui, this.gameSettings);
@@ -80,6 +85,7 @@ class Game {
       this.assets.assetsToLoad = assets;
       this.assets.preloadAssets();
     })
+    this.stateBar = new StateBar(this.ui);
     new SettingsMenu(this.ui, this.gameSettings);
     
     this.camera = this.createCamera();
@@ -92,6 +98,13 @@ class Game {
     });
   }
 
+  playWilhelm(playerId: string) {
+    const controller = this.players.get(playerId)
+    if (controller) {
+      controller.playWilhelm()
+    }
+  }
+
   changeLevel(level: string) {
     if (this._level === level) {
       return;
@@ -101,6 +114,10 @@ class Game {
     console.log(`load new level ${level}`);
     this.levelLoader.name = level;
     this.levelLoader.load()
+  }
+
+  showWonLost(won: boolean) {
+    this.wonLostText.show(won);
   }
 
   /**
@@ -178,6 +195,7 @@ class Game {
   private run () {
     this.engine.runRenderLoop(() => {
       this.scene.render();
+      this.wonLostText.update()
     });
   }
 
@@ -210,6 +228,9 @@ class Game {
       return
     }
     player.update(playerModel);
+    if (player.controllable) {
+      this.stateBar.update(playerModel);
+    }
   }
 
   public removePlayer(playerModel: Player) {

@@ -56,7 +56,7 @@ random_templates = [
             "radius_top": 0.2,
             "radius_bottom": 0.3,
             "height": 3,
-            "segments": 16,
+            "segments": 12,
             "pos": [0, 1.5, 0]
         }
     },
@@ -77,7 +77,15 @@ puppy_template = {
     "name": "dog",
     "pos": [16, 0, 7],
     "receiveShadows": False,
-    "rot": [0.0, 1.9, 0.0]
+    "rot": [0.0, 1.9, 0.0],
+    "collider": {
+        "type": "cylinder",
+        "radius_top": 0.4,
+        "radius_bottom": 0.4,
+        "height": 1,
+        "segments": 12,
+        "pos": [0, 0, 0]
+    }
 }
 
 tile_size = 6

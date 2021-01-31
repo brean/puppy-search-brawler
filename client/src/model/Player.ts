@@ -7,6 +7,9 @@ class Player extends Schema {
   @type("string") character: string = 'hunter';
   @type("boolean") admin: boolean = false;
   @type("boolean") ready: boolean = false;
+
+  @type("number") dogs: number = 0
+  @type("number") kill: number = 0
   
   @type("number") x: number = 0;
   @type("number") y: number = 0;

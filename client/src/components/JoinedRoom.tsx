@@ -45,11 +45,18 @@ class JoinedRoom extends Component<{ appData: AppData, match: any }, RoomMeta> {
     room.onMessage('change_level', (level: string) => {
       this.game?.changeLevel(level)
     })
+    room.onMessage('play_wilhelm', (playerId: string) => {
+      this.game?.playWilhelm(playerId)
+    })
     room.onMessage('update_map', (msg: string) => {
       this.setState({map: msg})
     })
     room.onMessage('update_mode', (msg: string) => {
       this.setState({mode: msg})
+    })
+
+    room.onMessage('winner', (playerId: string) => {
+      this.game?.showWonLost(playerId === room.sessionId)
     })
   }
 

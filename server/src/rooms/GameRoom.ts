@@ -22,10 +22,11 @@ export default class GameRoom extends Room {
   private canJumpOff: Body[] = []
 
   private world: World = new World();
-  private bodies: Map<string, Body> = new Map<string, Body>();
+  private playerBodies: Map<string, Body> = new Map<string, Body>();
   private bodyRadius: number = 0.4;
   private spawnAreas: any[];
-  private areas: Map<Body, any> = new Map<Body, any>()
+  private deadlyObjects: number[] = [];
+  private dogs: number[] = [];
 
   // When the room is initialized
   onCreate (options: any) {
@@ -128,8 +129,7 @@ export default class GameRoom extends Room {
         } else if (area.type === 'spawn') {
           this.spawnAreas.push(area);
         }
-        const shape = this.addGroundPlate(area.pos, mapData.height, area.size)
-        this.areas.set(shape, area);
+        this.addGroundPlate(area.pos, mapData.height, area.size)
       }
     }
     if (mapData.objects) {
@@ -137,17 +137,14 @@ export default class GameRoom extends Room {
         if (!obj.collider) {
           continue
         }
-        this.addCollider(obj)
+        const colliderBody = this.addCollider(obj)
+        if (obj.name === 'spikes') {
+          this.deadlyObjects.push(colliderBody.id)
+        } else if (obj.name === 'dog') {
+          this.dogs.push(colliderBody.id)
+        }
       }
     }
-  }
-
-  private resetWorld() {
-    this.world = new World();
-    this.world.gravity.set(0, -9.82, 0); // m/s²
-    this.bodies.forEach((playerBody) => {
-      this.world.addBody(playerBody);
-    })
   }
 
   private addGroundPlate(pos: number[], height, size): Body {
@@ -180,7 +177,7 @@ export default class GameRoom extends Room {
     }
   }
 
-  private addCollider(obj) {
+  private addCollider(obj): Body {
     let collider = new Body({
       mass: 0 // mass === 0 makes the body static
     });
@@ -205,6 +202,7 @@ export default class GameRoom extends Room {
       collider.addShape(colliderShape);
       this.world.addBody(collider);
     }
+    return collider;
   }
 
   private spawnPosition(body: Body) {
@@ -218,6 +216,17 @@ export default class GameRoom extends Room {
       body.position.y = this.bodyRadius;
       body.position.z = Math.random() * 6 - 3;
     }
+  }
+
+  private killPlayer(playerBody: Body, playerData: Player, wilhelm: boolean = true) {
+    if (wilhelm) {
+      this.broadcast('play_wilhelm', playerData.id)
+    }
+    // loose all pupies again
+    playerData.dogs = 0;
+    playerData.collectedDogs = [];
+    playerData.kill++;
+    this.resetPlayerPhysics(playerBody, playerData)
   }
 
   private resetPlayerPhysics(body: Body, player: Player) {
@@ -254,7 +263,7 @@ export default class GameRoom extends Room {
       let speed = player.speed * 15;
       let x = 0;
       let z = 0;
-      const playerBody = this.bodies.get(player.id);
+      const playerBody = this.playerBodies.get(player.id);
       if (speed !== 0 && !isNaN(speed)) {
         x = Math.sin(rotation)
         z = Math.cos(rotation)
@@ -275,9 +284,8 @@ export default class GameRoom extends Room {
       }
 
       if (playerBody.position.y < -10) {
-        // reset, TODO: kill_count+=1
         console.log(`player ${player.id} just died from falling, respawn`)
-        this.resetPlayerPhysics(playerBody, player);
+        this.killPlayer(playerBody, player, false);
         return
       }
 
@@ -310,14 +318,26 @@ export default class GameRoom extends Room {
         if (body.mass === 0 || this.canJumpOff.indexOf(body) >= 0) {
           this.canJump = true;
         }
-        const area = this.areas.get(body);
-        if (!area) {
-          return;
+        if (this.dogs.indexOf(body.id) >= 0 && 
+            playerData.collectedDogs.indexOf(body.id) === -1) {
+          playerData.collectedDogs.push(body.id)
+          playerData.dogs++;
+          const missing = this.dogs.length - playerData.collectedDogs.length
+          console.log(`player ${playerData.id} found dog with id ${body.id} - ${missing} to go`)
+          if (missing === 0) {
+            this.broadcast('winner', playerData.id)
+            console.log('WE HAVE A WINNER!')
+            this.resetAllPlayer()
+          }
+        }
+        if (this.deadlyObjects.indexOf(body.id) >= 0) {
+          console.log(`player ${playerData.id} died from touching a deadly object`)
+          this.killPlayer(playerBody, playerData)
         }
       }
     })
     this.resetPlayerPhysics(playerBody, playerData)
-    this.bodies.set(playerData.id, playerBody)
+    this.playerBodies.set(playerData.id, playerBody)
     this.world.addBody(playerBody);
 
     // Note that all player in the game will be given the sessionId of each other.
@@ -325,10 +345,21 @@ export default class GameRoom extends Room {
     this.state.players[playerData.id] = playerData
   }
 
+  resetAllPlayer() {
+    this.playerBodies.forEach((body, id) => {
+      const player: Player = this.state.players[id]
+      this.resetPlayerPhysics(body, player);
+      player.dogs = 0
+      player.kill = 0
+      player.collectedDogs = []
+    })
+  }
+
   // When a client leaves the room
   onLeave (client: Client, consented: boolean) {
     const admin = this.state.players[client.sessionId].admin
     delete this.state.players[client.sessionId]
+    this.playerBodies.delete(client.sessionId);
     if (admin) {
       // player was admin, give another player admin rights for this room
       const keys = Object.keys(this.state.players)
