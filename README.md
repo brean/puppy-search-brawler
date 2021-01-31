@@ -6,6 +6,9 @@ Global Game Jam Game 2021
 [![Coverage Status](https://coveralls.io/repos/github/brean/puppy-search-brawler/badge.svg?branch=main)](https://coveralls.io/github/brean/puppy-search-brawler?branch=main)
 ![MIT License](https://img.shields.io/github/license/brean/puppy-search-brawler)
 
+## Story
+![](client/public/story/story_overview.png)
+
 ## Technical
 
 Build ontop of colyseus-lobby-babylon
