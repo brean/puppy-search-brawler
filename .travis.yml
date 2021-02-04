@@ -14,13 +14,11 @@ notifications:
     on_failure: change
 
 install:
+  - npm install
+  - npm install --save-dev
   - cd client/
   - npm install
   - npm install --save-dev
-  - cd ../server
-  - npm install
-  - npm install --save-dev
-  - cd ..
 
 script:
   - cd client

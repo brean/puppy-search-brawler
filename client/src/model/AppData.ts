@@ -11,8 +11,8 @@ class AppData {
 
   constructor() {
     this.history = createHashHistory();
-    const prot = window.location.protocol.replace("http", "ws")
-    const endpoint = `${prot}//${window.location.hostname}:3001`;
+    const host = window.document.location.host.replace(/:.*/, '');
+    const endpoint = window.location.protocol.replace("http", "ws") + "//" + host + (window.location.port ? ':'+ window.location.port : '')
     this.client = new Client(endpoint);
   }
 }

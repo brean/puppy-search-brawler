@@ -1,4 +1,4 @@
-import { MapSchema } from "@colyseus/schema";
+import path from 'path';
 import { Room, Client } from "colyseus";
 import { World, Body, Box, Shape, Sphere, Vec3, Cylinder } from 'cannon-es';
 import { GAME_MODES, GAME_MAPS } from '../Settings';
@@ -6,6 +6,8 @@ import Player from "../entities/Player";
 import StateHandler from "../entities/StateHandler";
 import * as fs from 'fs';
 import { hexToHsl, getRandomColor, hslToHex } from '../colors';
+
+const STATIC_PATH = path.join(__dirname, "..", "..", "..", "client", "build");
 
 const CHARACTER_MODELS = ['mage', 'hunter', 'rogue']
 
@@ -95,7 +97,9 @@ export default class GameRoom extends Room {
     this.broadcast("change_level", level)
     this.state.level = level;
     this.spawnAreas = [];
-    const content = fs.readFileSync(`../client/public/maps/${level}.json`).toString()
+    const levelPath = path.join(STATIC_PATH, 'maps', `${level}.json`);
+    console.log(`loading level from ${levelPath}`)
+    const content = fs.readFileSync(levelPath).toString()
     const mapData = JSON.parse(content);
     const size = mapData.default_size;
     const maxX = mapData.length / 2;
