@@ -7,7 +7,8 @@ import StateHandler from "../entities/StateHandler";
 import * as fs from 'fs';
 import { hexToHsl, getRandomColor, hslToHex } from '../colors';
 
-const STATIC_PATH = path.join(__dirname, "..", "..", "..", "client", "build");
+const BASE_PATH = fs.existsSync('/app') ? '/app' : path.join(__dirname, "..", "..", "..");
+const STATIC_PATH = path.join(BASE_PATH, "client", "build");
 
 const CHARACTER_MODELS = ['mage', 'hunter', 'rogue']
 

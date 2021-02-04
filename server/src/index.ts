@@ -3,8 +3,8 @@ import { Server } from 'colyseus';
 import { createServer } from 'http';
 import express from 'express';
 import GameRoom from './rooms/GameRoom';
-import serveIndex from 'serve-index';
 import path from 'path';
+import * as fs from 'fs';
 
 const port = Number(process.env.PORT || 2567) + Number(process.env.NODE_APP_INSTANCE || 0)
 
@@ -18,7 +18,8 @@ const gameServer = new Server({
 });
 
 
-const STATIC_PATH = path.join(__dirname, "..", "..", "client", "build");
+const BASE_PATH = fs.existsSync('/app') ? '/app' : path.join(__dirname, "..", "..");
+const STATIC_PATH = path.join(BASE_PATH, "client", "build");
 
 console.log(`public path: ${STATIC_PATH}`)
 app.use('/', express.static(STATIC_PATH));
