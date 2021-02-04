@@ -21,8 +21,11 @@ const gameServer = new Server({
 const STATIC_PATH = path.join(__dirname, "..", "..", "client", "build");
 
 console.log(`public path: ${STATIC_PATH}`)
-app.use('/', serveIndex(STATIC_PATH, {'icons': true}))
 app.use('/', express.static(STATIC_PATH));
+
+app.get('/', function(req, res){
+  res.sendFile(path.join(STATIC_PATH, 'index.html'));
+});
 
 gameServer.define("game_room", GameRoom);
 gameServer.listen(port);
