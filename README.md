@@ -2,6 +2,8 @@
 
 Global Game Jam Game 2021
 
+You can play it online against others here: [puppy-search-brawler.herokuapp.com](https://puppy-search-brawler.herokuapp.com/)
+
 ![](client/public/puppy-brawler-title.png)
 
 [![Build Status](https://travis-ci.com/brean/puppy-search-brawler.svg?branch=main)](https://travis-ci.com/brean/puppy-search-brawler)
