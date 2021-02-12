@@ -4,6 +4,6 @@ import App from './App';
 
 test('we should start with the rooms Overview', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Rooms/i);
+  const linkElement = getByText(/Games/i);
   expect(linkElement).toBeInTheDocument();
 });
