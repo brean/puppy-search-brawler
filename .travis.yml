@@ -19,6 +19,7 @@ install:
   - cd client/
   - npm install
   - npm install --save-dev
+  - cd ..
 
 script:
   - cd client
